@@ -1,0 +1,43 @@
+<h1>Travel reservation form</h1>
+<h2>* denotes mandotory</h2>
+<form method="post">
+    <label for="fullName">Full name*:</label><br/>
+    <input placeholder="FirstName LastNAme"id="fullName" type="text" name="fullName" required/><br/>
+    
+    <label for="email">Email address*:</label><br/>
+    <input placeholder="EMAIL_ADDRESS"id="email" type="email" name="email" required/><br/>
+    
+    <label for="city">Select Tour Package *:</label><br/>
+    <select id="city" name="city"required>
+        <option value="Nablus">Nablus</option>
+        <option value="Tulkarm">Tulkarm</option>
+        <option value="Ramallah">Ramallah</option>
+    </select><br/>
+    
+    <label for="date">Arrival date*:</label><br/>
+    <input required type="text" id="date"name="date" placeholder="m/d/y" onfocus="(this.type='date')"/><br/>
+    
+    <label for="numPeople">Number of persons*:</label><br/>
+    <input placeholder="UNKNOWN_TYPE"id="numPeople" type="number"name="numPeople" min="0" max="10" required/><br/>
+    
+    
+    <label>What would you want to avail?*</label><br/>
+    <input type="checkbox" id="boarding" name="boarding" value="boarding">
+    <label for="boarding"> Boarding</label><br>
+    <input type="checkbox" id="fooding" name="fooding" value="fooding">
+    <label for="fooding"> Fooding</label><br>
+    <input type="checkbox" id="sightSeeing" name="sightSeeing" value="sightSeeing">
+    <label for="sightSeeing"> Sight seeing</label><br>
+    
+
+    <label for="coupon">Discout Coupon code:</label><br/>
+    <input type="text" id="coupon"name="coupon" placeholder="UNKNOWN_TYPE" "/>
+
+    <p >Terms and conditions*:</p>
+    <input id="agree"name="aggrement"value="agree"type="radio" required/>
+    <label for="agree">I agree</label>
+    <input id="disagree"name="aggrement"value="disagree"type="radio" />
+    <label for="disagree">I disagree</label><br/>
+    <input type="submit" value="Complete reservation"/>
+
+</form>
